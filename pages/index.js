@@ -37,11 +37,13 @@ export default function Home() {
             <p className=''>{note.message}</p>
 
             <div className='mt-3 space-x-3'>
-              
+              <Link href={`/${note._id}`}>
               <button className='bg-blue-500 text-white p-2 rounded-lg'> Details</button>
+              </Link>
               
               
-              <Link href='/edit'>
+              
+              <Link href={`/${note._id}/edit`}>
                 <button className='p-2 bg-blue-500 text-white rounded-lg'>Edit</button></Link>
               
             </div>
